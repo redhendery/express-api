@@ -1,0 +1,24 @@
+{
+  "name": "express-api",
+  "version": "1.0.0",
+  "description": "Simple Express API",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redhendery/express-api.git"
+  },
+  "keywords": [
+    "Express",
+    "Node",
+    "API"
+  ],
+  "author": "redhendery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redhendery/express-api/issues"
+  },
+  "homepage": "https://github.com/redhendery/express-api#readme"
+}
