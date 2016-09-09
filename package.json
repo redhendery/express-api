@@ -4,6 +4,7 @@
   "description": "Simple Express API",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "test"
   },
   "repository": {
