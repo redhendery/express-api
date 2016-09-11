@@ -1,6 +1,9 @@
 var express = require('express')
-
 var app = express()
+
+var googleMapsClient = require('@google/maps').createClient({
+  key: 'your API key here'
+});
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
