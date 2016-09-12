@@ -1,14 +1,24 @@
-var express = require('express')
-var app = express()
+const express = require('express')
+const path = require('path')
+const bodyParser = require('body-parser')
 
-var googleMapsClient = require('@google/maps').createClient({
+const app = express()
+
+// View engine set
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'hbs')
+
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(express.static(path.join(__dirname, 'public')))
+
+// Google Maps
+const googleMapsClient = require('@google/maps').createClient({
   key: 'your API key here'
 });
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+app.get('./views', (req, res) => {
+  res.render('index.hbs')
 });
 
-app.listen(3000, () => {
-  console.log('App listening at http://localhost:3000/')
-});
+module.exports = app
