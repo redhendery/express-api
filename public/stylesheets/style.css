@@ -1,3 +1,12 @@
+@font-face {
+
+}
+
+body {
+  color: #e4eff4;
+  background-color: #221f23;
+}
+
 h1 {
   font-family: 'Prompt', sans-serif;
 }
