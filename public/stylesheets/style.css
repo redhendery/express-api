@@ -1,8 +1,8 @@
 body {
+  /* Site Wide Text */
   color: #e4eff4;
-  background-color: #221f23;
-}
-
-h1 {
   font-family: 'Prompt', sans-serif;
+
+  /* Background */
+  background-color: #221f23;
 }
