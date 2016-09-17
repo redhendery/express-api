@@ -19,7 +19,7 @@ app.use('/', routes);
 
 // Google Maps
 const googleMapsClient = require('@google/maps').createClient({
-  key: 'your API key here'
+  key: '.env'
 });
 
 // Error Handling

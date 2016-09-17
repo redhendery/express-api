@@ -1,1 +1,28 @@
-<h1>I am Iron Man<h1>
+<div id="map">
+  <script>
+
+    function initMap() {
+      var myLatLng = {lat: -41.295210, lng: 174.783687};
+
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: myLatLng
+      });
+
+      var infowindow = new google.maps.InfoWindow({
+        content: "23 Kent Terrace, Wellington"
+      })
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Kent Terrace'
+      });
+      marker.addListener('click', function() {
+        infowindow.open(map, marker)
+      });
+    }
+  </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4yYpc2gelWpiLiV5S_usvXiRndEd-4tU&callback=initMap"
+    async defer></script>
+</div>
