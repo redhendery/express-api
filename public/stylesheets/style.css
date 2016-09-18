@@ -6,15 +6,20 @@ html, body {
   /* Background */
   background-color: #221f23;
 
- /* General Styling */
- height: 100%;
- margin: 0;
- padding: 0;
+  /* General Styling */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
+h1 {
+  text-align: center;
 }
 
 #map {
+  margin-left: auto;
+  margin-right: 32%;
   color: black;
   height: 75%;
-  width: 75%;
+  width: 60%;
 }
