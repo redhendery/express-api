@@ -6,10 +6,7 @@ function initMap() {
     center: myLatLng
   });
 
-  var infowindow = new google.maps.InfoWindow({
-    content: "23 Kent Terrace, Wellington"
-  })
-
+// Add Marker + Info Window
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
@@ -18,4 +15,7 @@ function initMap() {
   marker.addListener('click', function () {
     infowindow.open(map, marker)
   });
+  var infowindow = new google.maps.InfoWindow({
+    content: "23 Kent Terrace, Wellington"
+  })
 }
