@@ -15,7 +15,7 @@ function initMap() {
     map: map,
     title: 'Kent Terrace'
   });
-  marker.addListener('click', function() {
+  marker.addListener('click', function () {
     infowindow.open(map, marker)
   });
 }
