@@ -17,4 +17,10 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', routes);
 
+// // GET JSON Data File
+// app.get('/',function(req,res){
+//   res.sendFile(path.normalize(__dirname + '/data.JSON'))
+// })
+
+
 module.exports = app
