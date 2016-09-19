@@ -1,0 +1,9 @@
+{
+  "name": "Kent Terrace",
+  "address": "23 Kent Terrace, Wellington",
+  "phone number": 123456789,
+	"LatLng": {
+		"lat": -41.295210,
+		"lng": 174.783687
+	}
+}

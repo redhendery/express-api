@@ -1,7 +1,7 @@
 var map;
 
 function initMap() {
-  var LatLng = {lat: -41.295210, lng: 174.783687};
+  // var LatLng = {lat: -41.295210, lng: 174.783687};
   map = new google.maps.Map(document.getElementById('map'), {
     zoom: 14,
     center: new google.maps.LatLng(-41.2865, 174.7762),
@@ -21,7 +21,6 @@ function initMap() {
   })
 
   var script = document.createElement('script');
-  // (In this example we use a locally stored copy instead.)
   script.src = '/data/data.JSON';
   document.getElementsByTagName('head')[0].appendChild(script);
 
