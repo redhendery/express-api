@@ -2,9 +2,8 @@ var map;
 
 function initialize() {
   map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 2,
-    center: new google.maps.LatLng(2.8,-187.3),
-    mapTypeId: 'terrain'
+    zoom: 14,
+    center: new google.maps.LatLng(-41.288671, 174.777638)
   });
 
   var script = document.createElement('script');
