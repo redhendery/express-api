@@ -1,10 +1,7 @@
 html, body {
   /* Site Wide Text */
-  color: #e4eff4;
+  color: black;
   font-family: 'Prompt', sans-serif;
-
-  /* Background */
-  background-color: #221f23;
 
   /* General Styling */
   height: 100%;
@@ -16,17 +13,15 @@ h1 {
   text-align: center;
 }
 
-#map {
-  height: 75%;
-  width: 60%;
-  margin-left: auto;
-  margin-right: 32%;
+#parent {
+  display: flex;
+  height: 100%;
 }
-
 #box {
-  background-color: white;
-  width: 20%;
-  padding: 25px;
-  border: 25px solid white;
-  margin-left: 68%;
+  width: 30%;
+  background: white;
+
+}
+#map {
+  flex: 1;
 }
