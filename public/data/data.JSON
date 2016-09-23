@@ -14,6 +14,21 @@ eqfeed_callback({
 				]
 			},
 			"id": "0001"
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Cafe DeLux",
+				"address": "10 Kent Terrace, Wellington"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					174.784140,
+					-41.294112
+				]
+			},
+			"id": "0002"
 		}
 	]
 })
