@@ -18,13 +18,4 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', routes);
 
-// Load data.JSON for use with HBS
-var fileName = __dirname + '/data.json'
-
-function getData(data, id) {
-  for(i in data)
-    if(data[i].id === Number(id))
-      return data[i]
-}
-
 module.exports = app
