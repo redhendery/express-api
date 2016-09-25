@@ -1,7 +1,8 @@
 const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
-const env = process.env;
+const file = require('file-system')
+const fs = require('fs')
 
 const routes = require('./routes/routes')
 
@@ -17,10 +18,13 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', routes);
 
-// // GET JSON Data File
-// app.get('/',function(req,res){
-//   res.sendFile(path.normalize(__dirname + '/data.JSON'))
-// })
+// Load data.JSON for use with HBS
+var fileName = __dirname + '/data.json'
 
+function getData(data, id) {
+  for(i in data)
+    if(data[i].id === Number(id))
+      return data[i]
+}
 
 module.exports = app
