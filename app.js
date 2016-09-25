@@ -1,8 +1,7 @@
 const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
-const file = require('file-system')
-const fs = require('fs')
+const jsonfile = require('jsonfile')
 
 const routes = require('./routes/routes')
 
@@ -17,5 +16,10 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', routes);
+
+const file = '/data/data.json'
+jsonfile.readFile(file, function(err, obj) {
+  console.dir("This is the JSON obj: ", obj)
+})
 
 module.exports = app
