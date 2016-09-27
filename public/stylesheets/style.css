@@ -13,6 +13,10 @@ h1 {
   text-align: center;
 }
 
+li {
+  list-style: none;
+}
+
 #parent {
   display: flex;
   height: 100%;
