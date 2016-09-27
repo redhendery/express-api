@@ -17,6 +17,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', routes)
 
-console.log(kitchens)
+console.log("ID: ", kitchens.id)
+console.log("Name: ", kitchens.name)
+console.log("Address: ", kitchens.address)
 
 module.exports = app;
