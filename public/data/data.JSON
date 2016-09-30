@@ -9,8 +9,8 @@ kitchen_callback({
 			"geometry": {
 				"type": "Point",
 				"coordinates": [
-					174.783687,
-          -41.294992
+	        -41.294992,
+					174.783687
 				]
 			},
 			"id": "0001"
@@ -24,8 +24,8 @@ kitchen_callback({
 			"geometry": {
 				"type": "Point",
 				"coordinates": [
-					174.784140,
-					-41.294112
+					-41.294112,
+					174.784140
 				]
 			},
 			"id": "0002"
@@ -39,8 +39,8 @@ kitchen_callback({
 			"geometry": {
 				"type": "Point",
 				"coordinates": [
-					174.785706,
-					-41.273047
+					-41.273047,
+					174.785706
 				]
 			},
 			"id": "0003"

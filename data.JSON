@@ -2,14 +2,26 @@
 	"kitchens": [{
 		"id": 1,
 		"name": "Asian Food Republic",
-		"address": "23 Kent Terrace, Wellington"
+		"address": "23 Kent Terrace, Wellington",
+		"coordinates": [
+			174.783687,
+			-41.294992
+		]
 	}, {
 		"id": 2,
 		"name": "Cafe DeLux",
-		"address": "10 Kent Terrace, Wellington"
+		"address": "10 Kent Terrace, Wellington",
+		"coordinates": [
+			174.784140,
+			-41.294112
+		]
 	}, {
 		"id": 3,
 		"name": "Westpac Stadium",
-		"address": "105 Waterloo Quay, Wellington"
+		"address": "105 Waterloo Quay, Wellington",
+		"coordinates": [
+			174.785706,
+			-41.273047
+		]
 	}]
 }
