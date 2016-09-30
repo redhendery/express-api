@@ -16,6 +16,8 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')))
 
+
+// Load Kitchen data as JSON
 fs.readFile(__dirname + '/data.JSON', 'utf8', loadKitchens);
 
 function loadKitchens (err, data) {
